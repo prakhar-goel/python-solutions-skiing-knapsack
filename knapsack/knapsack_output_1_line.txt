@@ -1,0 +1,10 @@
+Total Value:41298, volumetric weight:47200, and NEWTON weight of products: 32077
+Product IDs of collected items:  [1370, 4887, 5084, 6532, 8699, 9972, 10496, 10981, 12856, 12979, 14301, 14448, 17788, 17896, 26950, 27376, 31288, 33638, 34414, 35280, 36175, 36769, 39987]
+Sum of product ids: 450166 
+
+
+Packed items product ids: [1370, 4887, 5084, 6532, 8699, 9972, 10496, 10981, 12856, 12979, 14301, 14448, 17788, 17896, 26950, 27376, 31288, 33638, 34414, 35280, 36175, 36769, 39987]
+Total value: 41298
+Total weight (volumetric): 47200
+Total weight (newtons): 32077
+Total sum of product ids: 450166
