@@ -1,6 +1,6 @@
 from ortools.algorithms import pywrapknapsack_solver
 
-num_products = 20
+num_products = 20000
 max_volume = 47250
 values = []
 weights_volumetric = []
@@ -79,7 +79,7 @@ def googleSolver():
         'test')
 
 
-    weights_gor = [weights_volumetric]
+    weights_gor = [weights_volumetric, weights_newton]
     capacities = [max_volume, 32078]
 
     solver.Init(values, weights_gor, capacities)
@@ -90,7 +90,7 @@ def googleSolver():
     packed_weights = [weights_gor[0][i] for i in packed_items]
     total_weight = sum(packed_weights)
 
-    print("Packed items: %s" % [productids[_] for _ in packed_items])
+    print("Packed items product ids: %s" % [productids[_] for _ in packed_items])
     print("Total value: %s" % computed_value)
     print("Total weight (volumetric): %s" % total_weight)
     print("Total weight (newtons): %s" % sum([weights_newton[_] for _ in packed_items]))
